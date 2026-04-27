@@ -1,0 +1,7 @@
+.env
+log.txt
+__pycache__/
+build/
+dist/
+installer_output/
+*.spec

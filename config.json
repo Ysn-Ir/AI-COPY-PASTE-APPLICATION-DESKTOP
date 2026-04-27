@@ -1,0 +1,38 @@
+{
+  "backend": "groq",
+  "model": "llama-3.3-70b-versatile",
+  "timeout_seconds": 20,
+  "log_file": "log.txt",
+  "hotkey_undo": "ctrl+alt+z",
+  "start_minimized": false,
+  "modes": {
+    "explain": {
+      "hotkey": "ctrl+alt+space",
+      "label": "Explain",
+      "description": "Plain-language explanation",
+      "prompt": "You are a brilliant teacher. Explain the following clearly and concisely, using simple language and examples where helpful. Answer in the same language as the question.",
+      "web_search": false
+    },
+    "code": {
+      "hotkey": "ctrl+alt+c",
+      "label": "Code",
+      "description": "Write production-ready code",
+      "prompt": "You are an expert software engineer. Given the task or description below, write clean, efficient, production-ready code. Include a brief comment explaining the approach. Output ONLY the code and short inline comments.",
+      "web_search": false
+    },
+    "fix": {
+      "hotkey": "ctrl+alt+f",
+      "label": "Fix",
+      "description": "Debug and fix code",
+      "prompt": "You are an expert debugger. Analyze the code or error below, identify the bug(s), and return the FIXED code with a short comment above each change explaining what was wrong and why the fix works.",
+      "web_search": false
+    },
+    "translate": {
+      "hotkey": "ctrl+alt+t",
+      "label": "Translate",
+      "description": "Translate to English",
+      "prompt": "Translate the following text to English. If the text already specifies a target language, follow that instead. Output ONLY the translated text, no preamble.",
+      "web_search": false
+    }
+  }
+}
